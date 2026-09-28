@@ -1,0 +1,39 @@
+2026-09-28 17:25:09,490 - root - INFO - Starting execution in mode: test, ablation: proposed
+2026-09-28 17:25:10,362 - root - INFO - Using device: cuda
+2026-09-28 17:25:10,444 - root - INFO - Loading ensemble of 5 fold models...
+2026-09-28 17:25:17,521 - timm.models._builder - INFO - Loading pretrained weights from Hugging Face hub (timm/swinv2_large_window12to16_192to256.ms_in22k_ft_in1k)
+2026-09-28 17:25:17,558 - timm.models._hub - INFO - [timm/swinv2_large_window12to16_192to256.ms_in22k_ft_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2026-09-28 17:25:20,085 - timm.models._builder - INFO - Missing keys (head.fc.weight, head.fc.bias) discovered while loading pretrained weights. This is expected if model is being adapted.
+2026-09-28 17:25:21,513 - src.evaluation.ensemble - INFO - Loaded model from checkpoints/best_model_proposed_fold0.pth
+2026-09-28 17:25:28,524 - timm.models._builder - INFO - Loading pretrained weights from Hugging Face hub (timm/swinv2_large_window12to16_192to256.ms_in22k_ft_in1k)
+2026-09-28 17:25:28,529 - timm.models._hub - INFO - [timm/swinv2_large_window12to16_192to256.ms_in22k_ft_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2026-09-28 17:25:29,393 - timm.models._builder - INFO - Missing keys (head.fc.weight, head.fc.bias) discovered while loading pretrained weights. This is expected if model is being adapted.
+2026-09-28 17:25:30,368 - src.evaluation.ensemble - INFO - Loaded model from checkpoints/best_model_proposed_fold1.pth
+2026-09-28 17:25:37,515 - timm.models._builder - INFO - Loading pretrained weights from Hugging Face hub (timm/swinv2_large_window12to16_192to256.ms_in22k_ft_in1k)
+2026-09-28 17:25:37,519 - timm.models._hub - INFO - [timm/swinv2_large_window12to16_192to256.ms_in22k_ft_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2026-09-28 17:25:38,504 - timm.models._builder - INFO - Missing keys (head.fc.weight, head.fc.bias) discovered while loading pretrained weights. This is expected if model is being adapted.
+2026-09-28 17:25:39,442 - src.evaluation.ensemble - INFO - Loaded model from checkpoints/best_model_proposed_fold2.pth
+2026-09-28 17:25:46,850 - timm.models._builder - INFO - Loading pretrained weights from Hugging Face hub (timm/swinv2_large_window12to16_192to256.ms_in22k_ft_in1k)
+2026-09-28 17:25:46,857 - timm.models._hub - INFO - [timm/swinv2_large_window12to16_192to256.ms_in22k_ft_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2026-09-28 17:25:47,866 - timm.models._builder - INFO - Missing keys (head.fc.weight, head.fc.bias) discovered while loading pretrained weights. This is expected if model is being adapted.
+2026-09-28 17:25:48,799 - src.evaluation.ensemble - INFO - Loaded model from checkpoints/best_model_proposed_fold3.pth
+2026-09-28 17:25:56,552 - timm.models._builder - INFO - Loading pretrained weights from Hugging Face hub (timm/swinv2_large_window12to16_192to256.ms_in22k_ft_in1k)
+2026-09-28 17:25:56,557 - timm.models._hub - INFO - [timm/swinv2_large_window12to16_192to256.ms_in22k_ft_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2026-09-28 17:25:57,573 - timm.models._builder - INFO - Missing keys (head.fc.weight, head.fc.bias) discovered while loading pretrained weights. This is expected if model is being adapted.
+2026-09-28 17:25:58,529 - src.evaluation.ensemble - INFO - Loaded model from checkpoints/best_model_proposed_fold4.pth
+2026-09-28 17:25:58,532 - root - INFO - Running ensemble inference with multi-scale TTA...
+2026-09-28 17:45:03,806 - root - INFO - Test Metrics - Acc: 0.8525, Precision: 0.7266, Recall: 0.6807, F1: 0.6947, QWK: 0.9276
+2026-09-28 17:45:03,806 - root - INFO - Test Classification Report:
+                  precision    recall  f1-score   support
+
+        0: No DR       0.99      0.98      0.99       199
+         1: Mild       0.68      0.57      0.62        30
+     2: Moderate       0.72      0.84      0.77        87
+       3: Severe       0.33      0.41      0.37        17
+4: Proliferative       0.91      0.61      0.73        33
+
+        accuracy                           0.85       366
+       macro avg       0.73      0.68      0.69       366
+    weighted avg       0.86      0.85      0.85       366
+
+2026-09-28 17:45:04,116 - root - INFO - Test predictions saved to results/test_predictions.npz (for generate_results mode)

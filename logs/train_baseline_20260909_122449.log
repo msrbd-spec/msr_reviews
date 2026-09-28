@@ -1,0 +1,261 @@
+2026-09-09 12:24:49,060 - root - INFO - Starting execution in mode: train, ablation: baseline
+2026-09-09 12:24:50,103 - root - INFO - Using device: cuda
+2026-09-09 12:24:50,104 - root - INFO - 
+============================================================
+2026-09-09 12:24:50,104 - root - INFO - Training Fold 1/5
+2026-09-09 12:24:50,104 - root - INFO - ============================================================
+2026-09-09 12:25:05,261 - timm.models._builder - INFO - Loading pretrained weights from Hugging Face hub (timm/swinv2_large_window12to16_192to256.ms_in22k_ft_in1k)
+2026-09-09 12:25:05,325 - timm.models._hub - INFO - [timm/swinv2_large_window12to16_192to256.ms_in22k_ft_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2026-09-09 12:25:12,164 - timm.models._builder - INFO - Missing keys (head.fc.weight, head.fc.bias) discovered while loading pretrained weights. This is expected if model is being adapted.
+2026-09-09 12:25:13,129 - src.training.trainer - INFO - Starting training...
+2026-09-09 12:25:13,129 - src.training.trainer - INFO - Training Fold 1
+2026-09-09 12:26:43,244 - src.training.trainer - INFO - Epoch 1/80
+2026-09-09 12:26:43,245 - src.training.trainer - INFO - [Train] Loss: 1.6255, Acc: 0.2827, Precision: 0.2670, Recall: 0.2660, F1: 0.2295, QWK: 0.1462
+2026-09-09 12:26:43,245 - src.training.trainer - INFO - [Val] Loss: 1.4708, Acc: 0.4817, Precision: 0.3107, Recall: 0.3197, F1: 0.2446, QWK: 0.4498
+2026-09-09 12:26:44,080 - src.training.trainer - INFO - New best model saved at epoch 1 with QWK 0.4498
+2026-09-09 12:27:58,944 - src.training.trainer - INFO - Epoch 2/80
+2026-09-09 12:27:58,945 - src.training.trainer - INFO - [Train] Loss: 1.2874, Acc: 0.5027, Precision: 0.3968, Recall: 0.4422, F1: 0.3697, QWK: 0.5585
+2026-09-09 12:27:58,945 - src.training.trainer - INFO - [Val] Loss: 1.4455, Acc: 0.5595, Precision: 0.3704, Recall: 0.4370, F1: 0.3088, QWK: 0.7028
+2026-09-09 12:27:59,789 - src.training.trainer - INFO - New best model saved at epoch 2 with QWK 0.7028
+2026-09-09 12:29:22,815 - src.training.trainer - INFO - Epoch 3/80
+2026-09-09 12:29:22,815 - src.training.trainer - INFO - [Train] Loss: 1.0842, Acc: 0.5976, Precision: 0.4779, Recall: 0.5397, F1: 0.4636, QWK: 0.6874
+2026-09-09 12:29:22,815 - src.training.trainer - INFO - [Val] Loss: 0.9507, Acc: 0.7409, Precision: 0.5956, Recall: 0.6175, F1: 0.5849, QWK: 0.8048
+2026-09-09 12:29:23,688 - src.training.trainer - INFO - New best model saved at epoch 3 with QWK 0.8048
+2026-09-09 12:30:49,735 - src.training.trainer - INFO - Epoch 4/80
+2026-09-09 12:30:49,738 - src.training.trainer - INFO - [Train] Loss: 1.0379, Acc: 0.6174, Precision: 0.5018, Recall: 0.5552, F1: 0.4795, QWK: 0.7050
+2026-09-09 12:30:49,739 - src.training.trainer - INFO - [Val] Loss: 1.1137, Acc: 0.7073, Precision: 0.5858, Recall: 0.5487, F1: 0.4959, QWK: 0.8117
+2026-09-09 12:30:50,604 - src.training.trainer - INFO - New best model saved at epoch 4 with QWK 0.8117
+2026-09-09 12:32:13,042 - src.training.trainer - INFO - Epoch 5/80
+2026-09-09 12:32:13,043 - src.training.trainer - INFO - [Train] Loss: 1.0143, Acc: 0.6193, Precision: 0.4894, Recall: 0.5331, F1: 0.4748, QWK: 0.6950
+2026-09-09 12:32:13,043 - src.training.trainer - INFO - [Val] Loss: 1.0725, Acc: 0.7851, Precision: 0.6927, Recall: 0.5635, F1: 0.5583, QWK: 0.8575
+2026-09-09 12:32:13,940 - src.training.trainer - INFO - New best model saved at epoch 5 with QWK 0.8575
+2026-09-09 12:33:27,445 - src.training.trainer - INFO - Epoch 6/80
+2026-09-09 12:33:27,446 - src.training.trainer - INFO - [Train] Loss: 0.9577, Acc: 0.6592, Precision: 0.5262, Recall: 0.5835, F1: 0.5227, QWK: 0.7397
+2026-09-09 12:33:27,446 - src.training.trainer - INFO - [Val] Loss: 0.9098, Acc: 0.7927, Precision: 0.6654, Recall: 0.6085, F1: 0.6079, QWK: 0.8685
+2026-09-09 12:33:28,348 - src.training.trainer - INFO - New best model saved at epoch 6 with QWK 0.8685
+2026-09-09 12:34:49,329 - src.training.trainer - INFO - Epoch 7/80
+2026-09-09 12:34:49,330 - src.training.trainer - INFO - [Train] Loss: 0.9584, Acc: 0.6410, Precision: 0.5204, Recall: 0.5867, F1: 0.5126, QWK: 0.7119
+2026-09-09 12:34:49,330 - src.training.trainer - INFO - [Val] Loss: 1.0261, Acc: 0.6402, Precision: 0.6246, Recall: 0.5084, F1: 0.4344, QWK: 0.7319
+2026-09-09 12:36:15,919 - src.training.trainer - INFO - Epoch 8/80
+2026-09-09 12:36:15,920 - src.training.trainer - INFO - [Train] Loss: 0.9207, Acc: 0.6470, Precision: 0.5271, Recall: 0.5867, F1: 0.5112, QWK: 0.7405
+2026-09-09 12:36:15,920 - src.training.trainer - INFO - [Val] Loss: 0.7229, Acc: 0.7957, Precision: 0.6873, Recall: 0.6695, F1: 0.6523, QWK: 0.8956
+2026-09-09 12:36:16,875 - src.training.trainer - INFO - New best model saved at epoch 8 with QWK 0.8956
+2026-09-09 12:37:43,351 - src.training.trainer - INFO - Epoch 9/80
+2026-09-09 12:37:43,352 - src.training.trainer - INFO - [Train] Loss: 0.9609, Acc: 0.6334, Precision: 0.5087, Recall: 0.5683, F1: 0.4987, QWK: 0.7312
+2026-09-09 12:37:43,352 - src.training.trainer - INFO - [Val] Loss: 1.4461, Acc: 0.6555, Precision: 0.5092, Recall: 0.4837, F1: 0.3844, QWK: 0.8572
+2026-09-09 12:38:57,215 - src.training.trainer - INFO - Epoch 10/80
+2026-09-09 12:38:57,215 - src.training.trainer - INFO - [Train] Loss: 0.9266, Acc: 0.6474, Precision: 0.5284, Recall: 0.5890, F1: 0.5146, QWK: 0.7368
+2026-09-09 12:38:57,215 - src.training.trainer - INFO - [Val] Loss: 1.0000, Acc: 0.8064, Precision: 0.7669, Recall: 0.5644, F1: 0.5877, QWK: 0.8835
+2026-09-09 12:40:13,571 - src.training.trainer - INFO - Epoch 11/80
+2026-09-09 12:40:13,572 - src.training.trainer - INFO - [Train] Loss: 0.9084, Acc: 0.6550, Precision: 0.5358, Recall: 0.6016, F1: 0.5217, QWK: 0.7623
+2026-09-09 12:40:13,572 - src.training.trainer - INFO - [Val] Loss: 1.4488, Acc: 0.7149, Precision: 0.5091, Recall: 0.5743, F1: 0.4954, QWK: 0.8755
+2026-09-09 12:41:37,609 - src.training.trainer - INFO - Epoch 12/80
+2026-09-09 12:41:37,615 - src.training.trainer - INFO - [Train] Loss: 0.8488, Acc: 0.6714, Precision: 0.5571, Recall: 0.6318, F1: 0.5535, QWK: 0.7499
+2026-09-09 12:41:37,615 - src.training.trainer - INFO - [Val] Loss: 1.0229, Acc: 0.7271, Precision: 0.7336, Recall: 0.5483, F1: 0.4990, QWK: 0.8106
+2026-09-09 12:43:14,546 - src.training.trainer - INFO - Epoch 13/80
+2026-09-09 12:43:14,547 - src.training.trainer - INFO - [Train] Loss: 0.8059, Acc: 0.6828, Precision: 0.5627, Recall: 0.6386, F1: 0.5613, QWK: 0.7708
+2026-09-09 12:43:14,547 - src.training.trainer - INFO - [Val] Loss: 0.8630, Acc: 0.7424, Precision: 0.6399, Recall: 0.6563, F1: 0.5956, QWK: 0.8298
+2026-09-09 12:44:55,093 - src.training.trainer - INFO - Epoch 14/80
+2026-09-09 12:44:55,094 - src.training.trainer - INFO - [Train] Loss: 0.7539, Acc: 0.7078, Precision: 0.5909, Recall: 0.6736, F1: 0.5954, QWK: 0.7985
+2026-09-09 12:44:55,094 - src.training.trainer - INFO - [Val] Loss: 1.0470, Acc: 0.6707, Precision: 0.6879, Recall: 0.5864, F1: 0.4997, QWK: 0.8594
+2026-09-09 12:46:29,729 - src.training.trainer - INFO - Epoch 15/80
+2026-09-09 12:46:29,730 - src.training.trainer - INFO - [Train] Loss: 0.6710, Acc: 0.7185, Precision: 0.6055, Recall: 0.7026, F1: 0.6110, QWK: 0.7884
+2026-09-09 12:46:29,730 - src.training.trainer - INFO - [Val] Loss: 0.9371, Acc: 0.7820, Precision: 0.7216, Recall: 0.6742, F1: 0.6168, QWK: 0.8920
+2026-09-09 12:48:12,062 - src.training.trainer - INFO - Epoch 16/80
+2026-09-09 12:48:12,260 - src.training.trainer - INFO - [Train] Loss: 0.6446, Acc: 0.7447, Precision: 0.6290, Recall: 0.7126, F1: 0.6408, QWK: 0.8182
+2026-09-09 12:48:12,260 - src.training.trainer - INFO - [Val] Loss: 0.7796, Acc: 0.8018, Precision: 0.6903, Recall: 0.6854, F1: 0.6626, QWK: 0.8977
+2026-09-09 12:48:13,616 - src.training.trainer - INFO - New best model saved at epoch 16 with QWK 0.8977
+2026-09-09 12:50:04,634 - src.training.trainer - INFO - Epoch 17/80
+2026-09-09 12:50:04,637 - src.training.trainer - INFO - [Train] Loss: 0.6352, Acc: 0.7492, Precision: 0.6355, Recall: 0.7285, F1: 0.6503, QWK: 0.8300
+2026-09-09 12:50:04,637 - src.training.trainer - INFO - [Val] Loss: 0.7370, Acc: 0.8155, Precision: 0.7104, Recall: 0.6954, F1: 0.6832, QWK: 0.9038
+2026-09-09 12:50:05,625 - src.training.trainer - INFO - New best model saved at epoch 17 with QWK 0.9038
+2026-09-09 12:51:43,693 - src.training.trainer - INFO - Epoch 18/80
+2026-09-09 12:51:43,694 - src.training.trainer - INFO - [Train] Loss: 0.5493, Acc: 0.7701, Precision: 0.6589, Recall: 0.7534, F1: 0.6771, QWK: 0.8361
+2026-09-09 12:51:43,694 - src.training.trainer - INFO - [Val] Loss: 0.8233, Acc: 0.7805, Precision: 0.6829, Recall: 0.6671, F1: 0.6376, QWK: 0.8949
+2026-09-09 12:52:58,638 - src.training.trainer - INFO - Epoch 19/80
+2026-09-09 12:52:58,639 - src.training.trainer - INFO - [Train] Loss: 0.5484, Acc: 0.7751, Precision: 0.6646, Recall: 0.7646, F1: 0.6834, QWK: 0.8332
+2026-09-09 12:52:58,639 - src.training.trainer - INFO - [Val] Loss: 0.6881, Acc: 0.8155, Precision: 0.7048, Recall: 0.6937, F1: 0.6821, QWK: 0.9055
+2026-09-09 12:52:59,476 - src.training.trainer - INFO - New best model saved at epoch 19 with QWK 0.9055
+2026-09-09 12:54:19,755 - src.training.trainer - INFO - Epoch 20/80
+2026-09-09 12:54:19,755 - src.training.trainer - INFO - [Train] Loss: 0.4471, Acc: 0.8062, Precision: 0.7018, Recall: 0.8043, F1: 0.7272, QWK: 0.8599
+2026-09-09 12:54:19,755 - src.training.trainer - INFO - [Val] Loss: 0.6962, Acc: 0.8018, Precision: 0.6868, Recall: 0.7054, F1: 0.6741, QWK: 0.9061
+2026-09-09 12:54:20,619 - src.training.trainer - INFO - New best model saved at epoch 20 with QWK 0.9061
+2026-09-09 12:55:46,594 - src.training.trainer - INFO - Epoch 21/80
+2026-09-09 12:55:46,595 - src.training.trainer - INFO - [Train] Loss: 0.5164, Acc: 0.7880, Precision: 0.6850, Recall: 0.7748, F1: 0.7081, QWK: 0.8349
+2026-09-09 12:55:46,595 - src.training.trainer - INFO - [Val] Loss: 0.7698, Acc: 0.8521, Precision: 0.7587, Recall: 0.6913, F1: 0.7160, QWK: 0.9153
+2026-09-09 12:55:47,556 - src.training.trainer - INFO - New best model saved at epoch 21 with QWK 0.9153
+2026-09-09 12:57:10,565 - src.training.trainer - INFO - Epoch 22/80
+2026-09-09 12:57:10,566 - src.training.trainer - INFO - [Train] Loss: 0.4503, Acc: 0.8153, Precision: 0.7112, Recall: 0.8108, F1: 0.7394, QWK: 0.8546
+2026-09-09 12:57:10,566 - src.training.trainer - INFO - [Val] Loss: 0.7722, Acc: 0.8186, Precision: 0.7226, Recall: 0.7054, F1: 0.6903, QWK: 0.9162
+2026-09-09 12:57:11,453 - src.training.trainer - INFO - New best model saved at epoch 22 with QWK 0.9162
+2026-09-09 12:58:25,716 - src.training.trainer - INFO - Epoch 23/80
+2026-09-09 12:58:25,717 - src.training.trainer - INFO - [Train] Loss: 0.3713, Acc: 0.8233, Precision: 0.7260, Recall: 0.8219, F1: 0.7513, QWK: 0.8558
+2026-09-09 12:58:25,717 - src.training.trainer - INFO - [Val] Loss: 1.0238, Acc: 0.8338, Precision: 0.7665, Recall: 0.6368, F1: 0.6617, QWK: 0.9166
+2026-09-09 12:58:26,568 - src.training.trainer - INFO - New best model saved at epoch 23 with QWK 0.9166
+2026-09-09 12:59:43,023 - src.training.trainer - INFO - Epoch 24/80
+2026-09-09 12:59:43,024 - src.training.trainer - INFO - [Train] Loss: 0.3958, Acc: 0.8336, Precision: 0.7365, Recall: 0.8259, F1: 0.7633, QWK: 0.8714
+2026-09-09 12:59:43,024 - src.training.trainer - INFO - [Val] Loss: 0.6779, Acc: 0.8323, Precision: 0.7118, Recall: 0.7446, F1: 0.7224, QWK: 0.9136
+2026-09-09 13:01:08,314 - src.training.trainer - INFO - Epoch 25/80
+2026-09-09 13:01:08,314 - src.training.trainer - INFO - [Train] Loss: 0.3934, Acc: 0.8495, Precision: 0.7568, Recall: 0.8363, F1: 0.7848, QWK: 0.8607
+2026-09-09 13:01:08,314 - src.training.trainer - INFO - [Val] Loss: 0.8381, Acc: 0.8049, Precision: 0.7033, Recall: 0.7058, F1: 0.6775, QWK: 0.9096
+2026-09-09 13:02:32,800 - src.training.trainer - INFO - Epoch 26/80
+2026-09-09 13:02:32,801 - src.training.trainer - INFO - [Train] Loss: 0.3627, Acc: 0.8450, Precision: 0.7485, Recall: 0.8358, F1: 0.7759, QWK: 0.8833
+2026-09-09 13:02:32,801 - src.training.trainer - INFO - [Val] Loss: 0.8195, Acc: 0.8460, Precision: 0.7471, Recall: 0.7121, F1: 0.7202, QWK: 0.9150
+2026-09-09 13:03:48,214 - src.training.trainer - INFO - Epoch 27/80
+2026-09-09 13:03:48,215 - src.training.trainer - INFO - [Train] Loss: 0.2892, Acc: 0.8811, Precision: 0.8019, Recall: 0.8733, F1: 0.8292, QWK: 0.9026
+2026-09-09 13:03:48,215 - src.training.trainer - INFO - [Val] Loss: 0.8180, Acc: 0.8460, Precision: 0.7392, Recall: 0.7051, F1: 0.7163, QWK: 0.9183
+2026-09-09 13:03:49,118 - src.training.trainer - INFO - New best model saved at epoch 27 with QWK 0.9183
+2026-09-09 13:05:04,566 - src.training.trainer - INFO - Epoch 28/80
+2026-09-09 13:05:04,568 - src.training.trainer - INFO - [Train] Loss: 0.2930, Acc: 0.8716, Precision: 0.7971, Recall: 0.8742, F1: 0.8263, QWK: 0.8956
+2026-09-09 13:05:04,568 - src.training.trainer - INFO - [Val] Loss: 1.0309, Acc: 0.8460, Precision: 0.7634, Recall: 0.6647, F1: 0.6898, QWK: 0.9174
+2026-09-09 13:06:27,793 - src.training.trainer - INFO - Epoch 29/80
+2026-09-09 13:06:27,795 - src.training.trainer - INFO - [Train] Loss: 0.3292, Acc: 0.8773, Precision: 0.7940, Recall: 0.8761, F1: 0.8250, QWK: 0.9065
+2026-09-09 13:06:27,795 - src.training.trainer - INFO - [Val] Loss: 0.7902, Acc: 0.8384, Precision: 0.7193, Recall: 0.7090, F1: 0.7100, QWK: 0.9124
+2026-09-09 13:07:54,181 - src.training.trainer - INFO - Epoch 30/80
+2026-09-09 13:07:54,181 - src.training.trainer - INFO - [Train] Loss: 0.2945, Acc: 0.8689, Precision: 0.7888, Recall: 0.8708, F1: 0.8189, QWK: 0.8849
+2026-09-09 13:07:54,182 - src.training.trainer - INFO - [Val] Loss: 0.9135, Acc: 0.8491, Precision: 0.7533, Recall: 0.6913, F1: 0.7123, QWK: 0.9196
+2026-09-09 13:07:55,142 - src.training.trainer - INFO - New best model saved at epoch 30 with QWK 0.9196
+2026-09-09 13:09:14,589 - src.training.trainer - INFO - Epoch 31/80
+2026-09-09 13:09:14,592 - src.training.trainer - INFO - [Train] Loss: 0.2576, Acc: 0.8948, Precision: 0.8247, Recall: 0.8819, F1: 0.8484, QWK: 0.9125
+2026-09-09 13:09:14,592 - src.training.trainer - INFO - [Val] Loss: 0.9243, Acc: 0.8476, Precision: 0.7355, Recall: 0.6842, F1: 0.7036, QWK: 0.9165
+2026-09-09 13:10:30,940 - src.training.trainer - INFO - Epoch 32/80
+2026-09-09 13:10:30,943 - src.training.trainer - INFO - [Train] Loss: 0.2659, Acc: 0.8841, Precision: 0.8083, Recall: 0.8781, F1: 0.8368, QWK: 0.9046
+2026-09-09 13:10:30,943 - src.training.trainer - INFO - [Val] Loss: 1.0225, Acc: 0.8460, Precision: 0.7614, Recall: 0.6852, F1: 0.7073, QWK: 0.9155
+2026-09-09 13:11:52,892 - src.training.trainer - INFO - Epoch 33/80
+2026-09-09 13:11:52,894 - src.training.trainer - INFO - [Train] Loss: 0.2104, Acc: 0.9065, Precision: 0.8417, Recall: 0.9027, F1: 0.8674, QWK: 0.9201
+2026-09-09 13:11:52,897 - src.training.trainer - INFO - [Val] Loss: 0.8136, Acc: 0.8399, Precision: 0.7313, Recall: 0.7034, F1: 0.7114, QWK: 0.9186
+2026-09-09 13:13:19,615 - src.training.trainer - INFO - Epoch 34/80
+2026-09-09 13:13:19,619 - src.training.trainer - INFO - [Train] Loss: 0.2898, Acc: 0.8959, Precision: 0.8199, Recall: 0.8853, F1: 0.8470, QWK: 0.9180
+2026-09-09 13:13:19,619 - src.training.trainer - INFO - [Val] Loss: 0.8090, Acc: 0.8384, Precision: 0.7268, Recall: 0.7077, F1: 0.7104, QWK: 0.9217
+2026-09-09 13:13:20,520 - src.training.trainer - INFO - New best model saved at epoch 34 with QWK 0.9217
+2026-09-09 13:14:40,267 - src.training.trainer - INFO - Epoch 35/80
+2026-09-09 13:14:40,267 - src.training.trainer - INFO - [Train] Loss: 0.2545, Acc: 0.9111, Precision: 0.8543, Recall: 0.9079, F1: 0.8773, QWK: 0.9343
+2026-09-09 13:14:40,268 - src.training.trainer - INFO - [Val] Loss: 0.7780, Acc: 0.8384, Precision: 0.7063, Recall: 0.7195, F1: 0.7115, QWK: 0.9094
+2026-09-09 13:15:56,502 - src.training.trainer - INFO - Epoch 36/80
+2026-09-09 13:15:56,503 - src.training.trainer - INFO - [Train] Loss: 0.2216, Acc: 0.9176, Precision: 0.8633, Recall: 0.9138, F1: 0.8850, QWK: 0.9350
+2026-09-09 13:15:56,503 - src.training.trainer - INFO - [Val] Loss: 0.8167, Acc: 0.8338, Precision: 0.7147, Recall: 0.7021, F1: 0.7029, QWK: 0.9178
+2026-09-09 13:17:17,690 - src.training.trainer - INFO - Epoch 37/80
+2026-09-09 13:17:17,693 - src.training.trainer - INFO - [Train] Loss: 0.2484, Acc: 0.9024, Precision: 0.8376, Recall: 0.8899, F1: 0.8606, QWK: 0.9156
+2026-09-09 13:17:17,693 - src.training.trainer - INFO - [Val] Loss: 1.1114, Acc: 0.8445, Precision: 0.7477, Recall: 0.6822, F1: 0.7012, QWK: 0.9151
+2026-09-09 13:18:43,040 - src.training.trainer - INFO - Epoch 38/80
+2026-09-09 13:18:43,044 - src.training.trainer - INFO - [Train] Loss: 0.2040, Acc: 0.9062, Precision: 0.8532, Recall: 0.8999, F1: 0.8737, QWK: 0.9059
+2026-09-09 13:18:43,044 - src.training.trainer - INFO - [Val] Loss: 0.9052, Acc: 0.8491, Precision: 0.7336, Recall: 0.7097, F1: 0.7164, QWK: 0.9158
+2026-09-09 13:20:03,065 - src.training.trainer - INFO - Epoch 39/80
+2026-09-09 13:20:03,067 - src.training.trainer - INFO - [Train] Loss: 0.1981, Acc: 0.9225, Precision: 0.8811, Recall: 0.9186, F1: 0.8977, QWK: 0.9337
+2026-09-09 13:20:03,067 - src.training.trainer - INFO - [Val] Loss: 0.9476, Acc: 0.8476, Precision: 0.7511, Recall: 0.6822, F1: 0.7061, QWK: 0.9193
+2026-09-09 13:21:19,352 - src.training.trainer - INFO - Epoch 40/80
+2026-09-09 13:21:19,354 - src.training.trainer - INFO - [Train] Loss: 0.2121, Acc: 0.9210, Precision: 0.8717, Recall: 0.9167, F1: 0.8918, QWK: 0.9289
+2026-09-09 13:21:19,354 - src.training.trainer - INFO - [Val] Loss: 1.1416, Acc: 0.8445, Precision: 0.7552, Recall: 0.6620, F1: 0.6918, QWK: 0.9184
+2026-09-09 13:22:38,314 - src.training.trainer - INFO - Epoch 41/80
+2026-09-09 13:22:38,318 - src.training.trainer - INFO - [Train] Loss: 0.1810, Acc: 0.9164, Precision: 0.8660, Recall: 0.9113, F1: 0.8860, QWK: 0.9207
+2026-09-09 13:22:38,318 - src.training.trainer - INFO - [Val] Loss: 1.0140, Acc: 0.8430, Precision: 0.7558, Recall: 0.6732, F1: 0.6995, QWK: 0.9177
+2026-09-09 13:24:04,353 - src.training.trainer - INFO - Epoch 42/80
+2026-09-09 13:24:04,354 - src.training.trainer - INFO - [Train] Loss: 0.1746, Acc: 0.9354, Precision: 0.8827, Recall: 0.9220, F1: 0.9007, QWK: 0.9367
+2026-09-09 13:24:04,354 - src.training.trainer - INFO - [Val] Loss: 0.9926, Acc: 0.8476, Precision: 0.7516, Recall: 0.6732, F1: 0.7008, QWK: 0.9173
+2026-09-09 13:25:24,068 - src.training.trainer - INFO - Epoch 43/80
+2026-09-09 13:25:24,069 - src.training.trainer - INFO - [Train] Loss: 0.1996, Acc: 0.9278, Precision: 0.8767, Recall: 0.9181, F1: 0.8952, QWK: 0.9293
+2026-09-09 13:25:24,069 - src.training.trainer - INFO - [Val] Loss: 1.0965, Acc: 0.8445, Precision: 0.7622, Recall: 0.6582, F1: 0.6899, QWK: 0.9220
+2026-09-09 13:25:24,937 - src.training.trainer - INFO - New best model saved at epoch 43 with QWK 0.9220
+2026-09-09 13:26:41,810 - src.training.trainer - INFO - Epoch 44/80
+2026-09-09 13:26:41,811 - src.training.trainer - INFO - [Train] Loss: 0.1847, Acc: 0.9354, Precision: 0.8940, Recall: 0.9257, F1: 0.9088, QWK: 0.9303
+2026-09-09 13:26:41,811 - src.training.trainer - INFO - [Val] Loss: 1.2088, Acc: 0.8369, Precision: 0.7591, Recall: 0.6422, F1: 0.6756, QWK: 0.9133
+2026-09-09 13:28:01,550 - src.training.trainer - INFO - Epoch 45/80
+2026-09-09 13:28:01,551 - src.training.trainer - INFO - [Train] Loss: 0.1725, Acc: 0.9343, Precision: 0.8916, Recall: 0.9349, F1: 0.9115, QWK: 0.9300
+2026-09-09 13:28:01,551 - src.training.trainer - INFO - [Val] Loss: 1.1014, Acc: 0.8430, Precision: 0.7649, Recall: 0.6603, F1: 0.6920, QWK: 0.9176
+2026-09-09 13:29:27,323 - src.training.trainer - INFO - Epoch 46/80
+2026-09-09 13:29:27,324 - src.training.trainer - INFO - [Train] Loss: 0.1988, Acc: 0.9286, Precision: 0.8880, Recall: 0.9221, F1: 0.9040, QWK: 0.9291
+2026-09-09 13:29:27,324 - src.training.trainer - INFO - [Val] Loss: 1.0650, Acc: 0.8445, Precision: 0.7479, Recall: 0.6799, F1: 0.7029, QWK: 0.9190
+2026-09-09 13:30:46,289 - src.training.trainer - INFO - Epoch 47/80
+2026-09-09 13:30:46,290 - src.training.trainer - INFO - [Train] Loss: 0.1435, Acc: 0.9384, Precision: 0.9013, Recall: 0.9308, F1: 0.9152, QWK: 0.9236
+2026-09-09 13:30:46,290 - src.training.trainer - INFO - [Val] Loss: 1.1039, Acc: 0.8415, Precision: 0.7334, Recall: 0.6714, F1: 0.6912, QWK: 0.9106
+2026-09-09 13:32:03,994 - src.training.trainer - INFO - Epoch 48/80
+2026-09-09 13:32:03,995 - src.training.trainer - INFO - [Train] Loss: 0.1344, Acc: 0.9449, Precision: 0.9078, Recall: 0.9410, F1: 0.9234, QWK: 0.9331
+2026-09-09 13:32:03,995 - src.training.trainer - INFO - [Val] Loss: 0.9403, Acc: 0.8430, Precision: 0.7433, Recall: 0.6986, F1: 0.7113, QWK: 0.9140
+2026-09-09 13:33:21,087 - src.training.trainer - INFO - Epoch 49/80
+2026-09-09 13:33:21,088 - src.training.trainer - INFO - [Train] Loss: 0.1296, Acc: 0.9403, Precision: 0.9049, Recall: 0.9346, F1: 0.9189, QWK: 0.9402
+2026-09-09 13:33:21,088 - src.training.trainer - INFO - [Val] Loss: 0.9407, Acc: 0.8476, Precision: 0.7527, Recall: 0.7002, F1: 0.7167, QWK: 0.9155
+2026-09-09 13:34:48,914 - src.training.trainer - INFO - Epoch 50/80
+2026-09-09 13:34:48,914 - src.training.trainer - INFO - [Train] Loss: 0.1725, Acc: 0.9388, Precision: 0.8971, Recall: 0.9292, F1: 0.9120, QWK: 0.9413
+2026-09-09 13:34:48,914 - src.training.trainer - INFO - [Val] Loss: 1.0697, Acc: 0.8445, Precision: 0.7519, Recall: 0.6923, F1: 0.7099, QWK: 0.9146
+2026-09-09 13:36:07,280 - src.training.trainer - INFO - Epoch 51/80
+2026-09-09 13:36:07,284 - src.training.trainer - INFO - [Train] Loss: 0.1449, Acc: 0.9476, Precision: 0.9146, Recall: 0.9401, F1: 0.9267, QWK: 0.9400
+2026-09-09 13:36:07,284 - src.training.trainer - INFO - [Val] Loss: 1.3033, Acc: 0.8384, Precision: 0.7573, Recall: 0.6554, F1: 0.6842, QWK: 0.9096
+2026-09-09 13:36:07,296 - src.training.trainer - INFO - SWA updated (n=1)
+2026-09-09 13:37:26,080 - src.training.trainer - INFO - Epoch 52/80
+2026-09-09 13:37:26,082 - src.training.trainer - INFO - [Train] Loss: 0.1465, Acc: 0.9396, Precision: 0.9037, Recall: 0.9311, F1: 0.9167, QWK: 0.9335
+2026-09-09 13:37:26,082 - src.training.trainer - INFO - [Val] Loss: 1.1038, Acc: 0.8430, Precision: 0.7558, Recall: 0.6753, F1: 0.6989, QWK: 0.9134
+2026-09-09 13:37:26,100 - src.training.trainer - INFO - SWA updated (n=2)
+2026-09-09 13:38:42,785 - src.training.trainer - INFO - Epoch 53/80
+2026-09-09 13:38:42,785 - src.training.trainer - INFO - [Train] Loss: 0.1417, Acc: 0.9483, Precision: 0.9178, Recall: 0.9407, F1: 0.9288, QWK: 0.9551
+2026-09-09 13:38:42,785 - src.training.trainer - INFO - [Val] Loss: 1.1120, Acc: 0.8354, Precision: 0.7408, Recall: 0.6835, F1: 0.6953, QWK: 0.9083
+2026-09-09 13:38:42,795 - src.training.trainer - INFO - SWA updated (n=3)
+2026-09-09 13:40:07,708 - src.training.trainer - INFO - Epoch 54/80
+2026-09-09 13:40:07,709 - src.training.trainer - INFO - [Train] Loss: 0.1538, Acc: 0.9476, Precision: 0.9115, Recall: 0.9351, F1: 0.9227, QWK: 0.9350
+2026-09-09 13:40:07,709 - src.training.trainer - INFO - [Val] Loss: 1.0827, Acc: 0.8445, Precision: 0.7534, Recall: 0.6952, F1: 0.7100, QWK: 0.9129
+2026-09-09 13:40:07,730 - src.training.trainer - INFO - SWA updated (n=4)
+2026-09-09 13:41:24,861 - src.training.trainer - INFO - Epoch 55/80
+2026-09-09 13:41:24,861 - src.training.trainer - INFO - [Train] Loss: 0.1657, Acc: 0.9354, Precision: 0.8985, Recall: 0.9295, F1: 0.9131, QWK: 0.9239
+2026-09-09 13:41:24,861 - src.training.trainer - INFO - [Val] Loss: 1.1709, Acc: 0.8399, Precision: 0.7454, Recall: 0.6856, F1: 0.7008, QWK: 0.9142
+2026-09-09 13:41:24,872 - src.training.trainer - INFO - SWA updated (n=5)
+2026-09-09 13:42:44,848 - src.training.trainer - INFO - Epoch 56/80
+2026-09-09 13:42:44,852 - src.training.trainer - INFO - [Train] Loss: 0.1648, Acc: 0.9339, Precision: 0.9000, Recall: 0.9174, F1: 0.9084, QWK: 0.9199
+2026-09-09 13:42:44,852 - src.training.trainer - INFO - [Val] Loss: 1.1408, Acc: 0.8445, Precision: 0.7508, Recall: 0.6743, F1: 0.6989, QWK: 0.9138
+2026-09-09 13:42:44,870 - src.training.trainer - INFO - SWA updated (n=6)
+2026-09-09 13:44:03,135 - src.training.trainer - INFO - Epoch 57/80
+2026-09-09 13:44:03,139 - src.training.trainer - INFO - [Train] Loss: 0.0929, Acc: 0.9514, Precision: 0.9235, Recall: 0.9490, F1: 0.9356, QWK: 0.9538
+2026-09-09 13:44:03,139 - src.training.trainer - INFO - [Val] Loss: 1.1597, Acc: 0.8445, Precision: 0.7480, Recall: 0.6719, F1: 0.6961, QWK: 0.9141
+2026-09-09 13:44:03,154 - src.training.trainer - INFO - SWA updated (n=7)
+2026-09-09 13:45:25,883 - src.training.trainer - INFO - Epoch 58/80
+2026-09-09 13:45:25,883 - src.training.trainer - INFO - [Train] Loss: 0.1303, Acc: 0.9483, Precision: 0.9169, Recall: 0.9479, F1: 0.9316, QWK: 0.9367
+2026-09-09 13:45:25,884 - src.training.trainer - INFO - [Val] Loss: 1.2106, Acc: 0.8445, Precision: 0.7503, Recall: 0.6711, F1: 0.6968, QWK: 0.9147
+2026-09-09 13:45:25,896 - src.training.trainer - INFO - SWA updated (n=8)
+2026-09-09 13:46:43,272 - src.training.trainer - INFO - Epoch 59/80
+2026-09-09 13:46:43,280 - src.training.trainer - INFO - [Train] Loss: 0.1321, Acc: 0.9464, Precision: 0.9148, Recall: 0.9397, F1: 0.9267, QWK: 0.9358
+2026-09-09 13:46:43,280 - src.training.trainer - INFO - [Val] Loss: 1.1557, Acc: 0.8476, Precision: 0.7520, Recall: 0.6755, F1: 0.7003, QWK: 0.9138
+2026-09-09 13:46:43,290 - src.training.trainer - INFO - SWA updated (n=9)
+2026-09-09 13:48:03,825 - src.training.trainer - INFO - Epoch 60/80
+2026-09-09 13:48:03,826 - src.training.trainer - INFO - [Train] Loss: 0.1120, Acc: 0.9552, Precision: 0.9242, Recall: 0.9488, F1: 0.9359, QWK: 0.9484
+2026-09-09 13:48:03,826 - src.training.trainer - INFO - [Val] Loss: 1.1285, Acc: 0.8506, Precision: 0.7479, Recall: 0.6849, F1: 0.7071, QWK: 0.9106
+2026-09-09 13:48:03,836 - src.training.trainer - INFO - SWA updated (n=10)
+2026-09-09 13:49:27,105 - src.training.trainer - INFO - Epoch 61/80
+2026-09-09 13:49:27,108 - src.training.trainer - INFO - [Train] Loss: 0.1120, Acc: 0.9601, Precision: 0.9366, Recall: 0.9551, F1: 0.9456, QWK: 0.9527
+2026-09-09 13:49:27,108 - src.training.trainer - INFO - [Val] Loss: 1.1176, Acc: 0.8552, Precision: 0.7717, Recall: 0.6858, F1: 0.7153, QWK: 0.9187
+2026-09-09 13:49:27,124 - src.training.trainer - INFO - SWA updated (n=11)
+2026-09-09 13:51:01,838 - src.training.trainer - INFO - Epoch 62/80
+2026-09-09 13:51:01,843 - src.training.trainer - INFO - [Train] Loss: 0.1080, Acc: 0.9491, Precision: 0.9224, Recall: 0.9359, F1: 0.9290, QWK: 0.9445
+2026-09-09 13:51:01,843 - src.training.trainer - INFO - [Val] Loss: 1.0815, Acc: 0.8552, Precision: 0.7608, Recall: 0.6941, F1: 0.7173, QWK: 0.9198
+2026-09-09 13:51:01,852 - src.training.trainer - INFO - SWA updated (n=12)
+2026-09-09 13:52:30,477 - src.training.trainer - INFO - Epoch 63/80
+2026-09-09 13:52:30,478 - src.training.trainer - INFO - [Train] Loss: 0.0802, Acc: 0.9612, Precision: 0.9398, Recall: 0.9595, F1: 0.9493, QWK: 0.9642
+2026-09-09 13:52:30,478 - src.training.trainer - INFO - [Val] Loss: 1.2337, Acc: 0.8460, Precision: 0.7555, Recall: 0.6681, F1: 0.6960, QWK: 0.9169
+2026-09-09 13:52:30,495 - src.training.trainer - INFO - SWA updated (n=13)
+2026-09-09 13:54:02,871 - src.training.trainer - INFO - Epoch 64/80
+2026-09-09 13:54:02,874 - src.training.trainer - INFO - [Train] Loss: 0.1115, Acc: 0.9555, Precision: 0.9256, Recall: 0.9504, F1: 0.9375, QWK: 0.9389
+2026-09-09 13:54:02,874 - src.training.trainer - INFO - [Val] Loss: 1.1184, Acc: 0.8521, Precision: 0.7574, Recall: 0.6845, F1: 0.7098, QWK: 0.9115
+2026-09-09 13:54:02,884 - src.training.trainer - INFO - SWA updated (n=14)
+2026-09-09 13:55:35,281 - src.training.trainer - INFO - Epoch 65/80
+2026-09-09 13:55:35,288 - src.training.trainer - INFO - [Train] Loss: 0.1123, Acc: 0.9628, Precision: 0.9341, Recall: 0.9523, F1: 0.9429, QWK: 0.9667
+2026-09-09 13:55:35,288 - src.training.trainer - INFO - [Val] Loss: 1.2395, Acc: 0.8460, Precision: 0.7498, Recall: 0.6691, F1: 0.6959, QWK: 0.9128
+2026-09-09 13:55:35,303 - src.training.trainer - INFO - SWA updated (n=15)
+2026-09-09 13:57:04,591 - src.training.trainer - INFO - Epoch 66/80
+2026-09-09 13:57:04,592 - src.training.trainer - INFO - [Train] Loss: 0.0950, Acc: 0.9620, Precision: 0.9368, Recall: 0.9570, F1: 0.9466, QWK: 0.9555
+2026-09-09 13:57:04,592 - src.training.trainer - INFO - [Val] Loss: 1.2098, Acc: 0.8491, Precision: 0.7539, Recall: 0.6768, F1: 0.7024, QWK: 0.9161
+2026-09-09 13:57:04,611 - src.training.trainer - INFO - SWA updated (n=16)
+2026-09-09 13:58:39,904 - src.training.trainer - INFO - Epoch 67/80
+2026-09-09 13:58:39,905 - src.training.trainer - INFO - [Train] Loss: 0.1278, Acc: 0.9533, Precision: 0.9232, Recall: 0.9451, F1: 0.9337, QWK: 0.9341
+2026-09-09 13:58:39,905 - src.training.trainer - INFO - [Val] Loss: 1.1952, Acc: 0.8476, Precision: 0.7512, Recall: 0.6829, F1: 0.7050, QWK: 0.9178
+2026-09-09 13:58:39,927 - src.training.trainer - INFO - SWA updated (n=17)
+2026-09-09 14:00:06,513 - src.training.trainer - INFO - Epoch 68/80
+2026-09-09 14:00:06,514 - src.training.trainer - INFO - [Train] Loss: 0.1199, Acc: 0.9563, Precision: 0.9267, Recall: 0.9521, F1: 0.9389, QWK: 0.9604
+2026-09-09 14:00:06,514 - src.training.trainer - INFO - [Val] Loss: 1.1730, Acc: 0.8445, Precision: 0.7454, Recall: 0.6746, F1: 0.6987, QWK: 0.9129
+2026-09-09 14:00:06,523 - src.training.trainer - INFO - SWA updated (n=18)
+2026-09-09 14:00:06,524 - src.training.trainer - INFO - Early stopping triggered after 68 epochs.
+2026-09-09 14:00:06,524 - src.training.trainer - INFO - Updating SWA BatchNorm statistics...
+2026-09-09 14:01:35,693 - src.training.trainer - INFO - [SWA Val] Loss: 1.1539, Acc: 0.8476, QWK: 0.9194
+2026-09-09 14:01:36,649 - root - INFO - 
+============================================================
+2026-09-09 19:56:38,408 - src.training.trainer - INFO - Updating SWA BatchNorm statistics...
+2026-09-09 19:58:08,261 - src.training.trainer - INFO - [SWA Val] Loss: 1.0855, Acc: 0.8567, QWK: 0.9167
+2026-09-09 19:58:08,606 - root - INFO - 
+K-Fold training complete. 5 models saved.
+2026-09-09 19:58:08,606 - root - INFO - Training complete.

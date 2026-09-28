@@ -1,0 +1,57 @@
+# SSL Pretraining Configuration (Phase 3 of plan.md)
+# Lesion-Aware Self-Supervised Pretraining on EyePACS
+
+# Dataset paths
+ssl_image_dirs:
+  - "datasets/EyePACS/EyePACS"
+ssl_train_labels_csv: "datasets/EyePACS/trainLabels.csv/trainLabels.csv"
+ssl_lesion_label_dir: "datasets/EyePACS/lesion_labels"
+ssl_img_size: 512
+ssl_mask_size: 128
+
+
+
+
+# Model
+ssl_backbone: "swinv2_large_window12to16_192to256.ms_in22k_ft_in1k"
+ssl_projection_dim: 128
+
+# Training
+ssl_epochs: 100
+
+
+
+ssl_lr: 0.00015
+ssl_backbone_lr_mult: 0.1
+ssl_weight_decay: 0.05
+ssl_warmup_epochs: 5
+ssl_grad_clip: 1.0
+ssl_batch_size: 24
+
+
+ssl_grad_accum_steps: 1
+ssl_num_workers: 8
+
+
+# AMP
+ssl_use_amp: true
+
+# EMA
+ssl_use_ema: true
+ssl_ema_decay: 0.996
+
+# Contrastive loss
+ssl_temperature: 0.07
+ssl_w_contrastive: 1.0
+
+# Multi-task loss weights
+ssl_w_lesion_type: 0.5
+ssl_w_lesion_count: 0.3
+ssl_w_reconstruction: 0.2
+
+# Ablation flags (set to false for ablation experiments)
+ssl_use_contrastive: true
+ssl_use_multitask: true
+
+# Save
+ssl_save_dir: "checkpoints"
