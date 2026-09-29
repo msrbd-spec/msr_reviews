@@ -1,0 +1,76 @@
+{
+  "target_epsilon": 8.0,
+  "target_delta": 1e-05,
+  "accountant": "rdp",
+  "rounds_run": 50,
+  "rounds_budgeted_for_sigma": 50,
+  "achieved_epsilon_per_client": [
+    7.994108728622693,
+    7.9911712301613536,
+    7.9968902497799865,
+    7.994191576456397,
+    7.995557511290721
+  ],
+  "achieved_epsilon_mean": 7.99438385926223,
+  "achieved_epsilon_max": 7.9968902497799865,
+  "sigma_per_client": [
+    1.76025390625,
+    1.4892578125,
+    1.1541748046875,
+    1.23291015625,
+    1.341552734375
+  ],
+  "audit_trail": [
+    {
+      "client": 1,
+      "n_k": 748,
+      "batches_per_epoch": 24,
+      "sample_rate": 0.041666666666666664,
+      "total_steps_budgeted": 3600,
+      "sigma": 1.76025390625,
+      "target_epsilon": 8.0,
+      "target_delta": 1e-05
+    },
+    {
+      "client": 2,
+      "n_k": 1124,
+      "batches_per_epoch": 36,
+      "sample_rate": 0.027777777777777776,
+      "total_steps_budgeted": 5400,
+      "sigma": 1.4892578125,
+      "target_epsilon": 8.0,
+      "target_delta": 1e-05
+    },
+    {
+      "client": 3,
+      "n_k": 2248,
+      "batches_per_epoch": 71,
+      "sample_rate": 0.014084507042253521,
+      "total_steps_budgeted": 10650,
+      "sigma": 1.1541748046875,
+      "target_epsilon": 8.0,
+      "target_delta": 1e-05
+    },
+    {
+      "client": 4,
+      "n_k": 1872,
+      "batches_per_epoch": 59,
+      "sample_rate": 0.01694915254237288,
+      "total_steps_budgeted": 8850,
+      "sigma": 1.23291015625,
+      "target_epsilon": 8.0,
+      "target_delta": 1e-05
+    },
+    {
+      "client": 5,
+      "n_k": 1500,
+      "batches_per_epoch": 47,
+      "sample_rate": 0.02127659574468085,
+      "total_steps_budgeted": 7050,
+      "sigma": 1.341552734375,
+      "target_epsilon": 8.0,
+      "target_delta": 1e-05
+    }
+  ],
+  "scope_note": "Per-client (participant-level), end-to-end over the full federated training run actually executed (cross-silo: all 5 clients participate every round; standard Poisson-subsampled-Gaussian amplification only, no extra client-subsampling amplification claimed)."
+}
