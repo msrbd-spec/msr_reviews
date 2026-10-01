@@ -9,11 +9,11 @@
         0.9384404924760601
       ],
       "per_client_fedprox_f1": [
-        null,
-        null,
-        null,
-        null,
-        null
+        1.0,
+        0.9727047146401986,
+        0.9318623788731537,
+        0.9330808080808081,
+        0.9037227214377407
       ],
       "fedprox_ckpt_used": "pipeline_v2_single_gpu/Fold_1/FL_Run2_Heterogeneous/fl/Fold_1_FL_Run2_Heterogeneous_fl_best.pt"
     },
@@ -26,11 +26,11 @@
         0.8717948717948718
       ],
       "per_client_fedprox_f1": [
-        null,
-        null,
-        null,
-        null,
-        null
+        0.8768525592055004,
+        0.9727047146401986,
+        0.9218159581646423,
+        0.9400563607085347,
+        0.9206349206349206
       ],
       "fedprox_ckpt_used": "pipeline_v2_single_gpu/Fold_2/FL_Run2_Heterogeneous/fl/Fold_2_FL_Run2_Heterogeneous_fl_best.pt"
     },
@@ -43,11 +43,11 @@
         0.8486919611919612
       ],
       "per_client_fedprox_f1": [
-        null,
-        null,
-        null,
-        null,
-        null
+        0.8958333333333333,
+        0.9476190476190476,
+        0.9073616123565413,
+        0.9402116402116402,
+        0.8743814664867297
       ],
       "fedprox_ckpt_used": "pipeline_v2_single_gpu/Fold_3/FL_Run2_Heterogeneous/fl/Fold_3_FL_Run2_Heterogeneous_fl_best.pt"
     },
@@ -60,11 +60,11 @@
         0.8820346320346321
       ],
       "per_client_fedprox_f1": [
-        null,
-        null,
-        null,
-        null,
-        null
+        0.9603174603174602,
+        0.8057976506252368,
+        0.9288856304985338,
+        0.8497746924856899,
+        0.8995798319327731
       ],
       "fedprox_ckpt_used": "pipeline_v2_single_gpu/Fold_4/FL_Run2_Heterogeneous/fl/Fold_4_FL_Run2_Heterogeneous_fl_best.pt"
     },
@@ -77,11 +77,11 @@
         0.8543100750938674
       ],
       "per_client_fedprox_f1": [
-        null,
-        null,
-        null,
-        null,
-        null
+        0.8891933585028213,
+        0.8253968253968255,
+        0.8729876060013047,
+        0.9264822134387352,
+        0.875
       ],
       "fedprox_ckpt_used": "pipeline_v2_single_gpu/Fold_5/FL_Run2_Heterogeneous/fl/Fold_5_FL_Run2_Heterogeneous_fl_best.pt"
     }
@@ -96,11 +96,11 @@
         0.6541005291005291
       ],
       "per_client_fedprox_f1": [
-        null,
-        null,
-        null,
-        null,
-        null
+        0.9307359307359307,
+        0.8667048054919908,
+        0.9573863636363636,
+        0.9223684210526315,
+        0.9150406504065041
       ],
       "fedprox_ckpt_used": "outputs/run3_dirichlet/Fold_1/Fold_1_FL_Run3_LabelSkew_Dirichlet_fl_best.pt"
     },
@@ -113,11 +113,11 @@
         0.43208020050125306
       ],
       "per_client_fedprox_f1": [
-        null,
-        null,
-        null,
-        null,
-        null
+        0.8604852070274347,
+        0.963095238095238,
+        0.9573863636363636,
+        0.8945360195360196,
+        0.9559290382819794
       ],
       "fedprox_ckpt_used": "outputs/run3_dirichlet/Fold_2/Fold_2_FL_Run3_LabelSkew_Dirichlet_fl_best.pt"
     },
@@ -130,11 +130,11 @@
         0.7521381886087769
       ],
       "per_client_fedprox_f1": [
-        null,
-        null,
-        null,
-        null,
-        null
+        0.9349508682191412,
+        0.9215468892656842,
+        0.9574770258980785,
+        0.8771000689137345,
+        0.8387129210658621
       ],
       "fedprox_ckpt_used": "outputs/run3_dirichlet/Fold_3/Fold_3_FL_Run3_LabelSkew_Dirichlet_fl_best.pt"
     },
@@ -147,11 +147,11 @@
         0.5140222984562608
       ],
       "per_client_fedprox_f1": [
-        null,
-        null,
-        null,
-        null,
-        null
+        0.820484876120991,
+        0.8628110975112199,
+        0.8747147339894451,
+        0.9007987448295535,
+        0.9572638146167558
       ],
       "fedprox_ckpt_used": "outputs/run3_dirichlet/Fold_4/Fold_4_FL_Run3_LabelSkew_Dirichlet_fl_best.pt"
     },
@@ -164,11 +164,11 @@
         0.8810817805383023
       ],
       "per_client_fedprox_f1": [
-        null,
-        null,
-        null,
-        null,
-        null
+        0.9062865497076023,
+        0.9408496732026144,
+        0.8944444444444445,
+        0.8732772094344984,
+        0.8440531324163038
       ],
       "fedprox_ckpt_used": "outputs/run3_dirichlet/Fold_5/Fold_5_FL_Run3_LabelSkew_Dirichlet_fl_best.pt"
     }
